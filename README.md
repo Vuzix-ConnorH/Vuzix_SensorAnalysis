@@ -1,52 +1,51 @@
 Author:   Connor Hack
+
 Project:  Sensor Analysis
+
 Date:     2/17/15
 
-Copyright (c) 2015, Vuzix Corporation
 
-===============================================================================
-CONTENTS OF THIS FILE
-===============================================================================
+###### Copyright (c) 2015, Vuzix Corporation
 
+
+#CONTENTS OF THIS FILE
+
+***
   1. Description of Project
-    a. Project Inception
-    b. Functionality
-    c. Usage
+    1. Project Inception
+    2. Functionality
+    3. Usage
   2. Project Source Contents
   3. Known Issues
   4. Installation
 
-===============================================================================
+***
 
-  1. DESCRIPTION OF PROJECT
+##  1. DESCRIPTION OF PROJECT
 
--------------------------------------------------------------------------------
-
-    a. PROJECT INCEPTION
+    1. PROJECT INCEPTION
 
      This project was used to send along with a refurbished device to a 
      potential partner of micro-location processing.  The project was sent with
      its source code to show an example of a sample application on the M100.
-  
--------------------------------------------------------------------------------
 
-    b. FUNCTIONALITY
+    2. FUNCTIONALITY
 
      The project contains five different views for displaying information on 
      the M100 sensors.  There exists the:
   
-        - Raw Coordinates view that displays raw accelerometer x, y, z values.
-        - Absolute Coordinates view that displays raw linear acceleration x, y,
+        * Raw Coordinates view that displays raw accelerometer x, y, z values.
+        * Absolute Coordinates view that displays raw linear acceleration x, y,
            z values.
-        - Spherical Coordinates view that displays information from the M100's
+        * Spherical Coordinates view that displays information from the M100's
            accelerometer, gravity, and magnetic sensor.  The x value is the 
            square root of the addition of x^2, y^2, and z^2 on the 
            accelerometer, the y and z value are respectively the inclination 
            and azimuth values found by obtaining orientation from the gravity 
            and magnetic sensor.
-        - Low Pass Filtered Coordinates that takes the Spherical Coordinates
+        * Low Pass Filtered Coordinates that takes the Spherical Coordinates
            values and applies a low pass filter to its three values.
-        - High Pass Filtered Coordinates that takes the Spherical Coordinates 
+        * High Pass Filtered Coordinates that takes the Spherical Coordinates 
            values and applies a high pass filter to its three values.
 
      In addition to the five Coordinate Systems (CS), there is also a required
@@ -59,9 +58,7 @@ CONTENTS OF THIS FILE
      the rate at which the sensors collect data.  The faster the rate, the
      faster the sensors collect data.
 
--------------------------------------------------------------------------------
-
-    c. USAGE
+    3. USAGE
 
      This project was designed to run on a Vuzix M100.  It has not been tested 
      on a smartphone device.  Due to differences in axes, the application will
@@ -91,10 +88,10 @@ CONTENTS OF THIS FILE
      modify the CPU usage as well as the rate at which the display shows sensor
      information.
 
-===============================================================================
-  
-  2. SOURCE CONTENTS
 
+***  
+  2. SOURCE CONTENTS
+-------------------------------------------------------------------------------
    The Source folder (src) contains two packages:
 
      - com.vuzix.sensorAnalysis.activities (referred to as Activities)
@@ -120,11 +117,10 @@ CONTENTS OF THIS FILE
    for any instances of CoordinateSystem.java.  This provides a reduction of 
    repeat code and more fluidity.  As each name indicates, the classes within
    Functions are each a CoordinateSystem.
-
-===============================================================================
-
+   
+***
   3. KNOWN ISSUES
-
+-------------------------------------------------------------------------------
    There exists a couple of known issues, or limitations, of the device.  If a
    user moves the device around while the device is calibrating the virtual
    origin, there will not be a reliable origin to use for the Spherical
@@ -138,10 +134,9 @@ CONTENTS OF THIS FILE
    trying to read the inclination value, the inclination value will jump.  This
    is a known issue with an unknown solution.
 
-===============================================================================
-
+***
   4. INSTALLATION
-
+-------------------------------------------------------------------------------
    - To install the application on a device, simply install the 
      com.vuzix.sensorAnalysis.apk file included in this zip file.
 
@@ -151,16 +146,17 @@ CONTENTS OF THIS FILE
 
    - To install the project into Eclipse with ADK plugin, simply follow:
 
-      File > Import... > General > Existing Projects into Workspace
+     > File > Import... > General > Existing Projects into Workspace
 
      and input the location of the Vuzix_SensorAnalysis.zip file in the space
      alloted for the archive file.
 
    - To install the project into Android Studio, simply follow:
 
-      File > Import Project... 
+     > File > Import Project... 
 
      and input the location of the UNZIPPED Vuzix_SensorAnlysis.zip file. From 
      here, Clean the project and then Make the project.
-
-===============================================================================
+     
+     
+###### Copyright (c) 2015, Vuzix Corporation
