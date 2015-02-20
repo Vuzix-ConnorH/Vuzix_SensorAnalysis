@@ -8,8 +8,7 @@
 ###### Copyright (c) 2015, Vuzix Corporation
 
 
-# CONTENTS OF THIS FILE
-- - - -
+# Contents of this file
   1. Description of Project
     1. Project Inception
     2. Functionality
@@ -17,7 +16,7 @@
   2. Project Source Contents
   3. Known Issues
   4. Installation
-- - - -
+
 
 ###  1. Description of Project
 
@@ -88,7 +87,8 @@ modify the CPU usage as well as the rate at which the display shows sensor
 information.
 
 
-- - - -  
+ 
+ ***
 2. Source Contents
 -------------------------------------------------------------------------------
 The Source folder (src) contains two packages:
@@ -117,7 +117,7 @@ for any instances of CoordinateSystem.java.  This provides a reduction of
 repeat code and more fluidity.  As each name indicates, the classes within
 Functions are each a CoordinateSystem.
    
-- - - -
+***
 3. Known Issues
 -------------------------------------------------------------------------------
 There exists a couple of known issues, or limitations, of the device.  If a
@@ -133,7 +133,7 @@ If a user has significantly tilted his/her head to the left or right while
 trying to read the inclination value, the inclination value will jump.  This
 is a known issue with an unknown solution.
 
-- - - -
+***
 4. Installation
 -------------------------------------------------------------------------------
 - To install the application on a device, simply install the 
