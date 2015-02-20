@@ -1,15 +1,14 @@
-Author:   Connor Hack
+**Author:**   *Connor Hack*
 
-Project:  Sensor Analysis
+**Project:**  *Sensor Analysis*
 
-Date:     2/17/15
+**Date:**     *2/17/15*
 
 
 ###### Copyright (c) 2015, Vuzix Corporation
 
 
 # CONTENTS OF THIS FILE
-
 - - - -
   1. Description of Project
     1. Project Inception
@@ -18,7 +17,6 @@ Date:     2/17/15
   2. Project Source Contents
   3. Known Issues
   4. Installation
-
 - - - -
 
 ###  1. Description of Project
@@ -30,7 +28,7 @@ potential partner of micro-location processing.  The project was sent with
 its source code to show an example of a sample application on the M100.
      
 
-2. Functionality
+##### 2. Functionality
 
 The project contains five different views for displaying information on 
 the M100 sensors.  There exists the:
@@ -59,7 +57,7 @@ Within the action bar, there exists a spinner (drop-down menu) to select
 the rate at which the sensors collect data.  The faster the rate, the
 faster the sensors collect data.
 
-3. Usage
+##### 3. Usage
 
 This project was designed to run on a Vuzix M100.  It has not been tested 
 on a smartphone device.  Due to differences in axes, the application will
