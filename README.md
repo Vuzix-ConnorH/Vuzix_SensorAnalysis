@@ -141,7 +141,8 @@ is a known issue with an unknown solution.
 
    - E.g. Within Linux, and with the Vuzix M100 device connected to the PC,
           use the command:
-     $ adb install com.vuzix.sensorAnalysis.apk
+
+     > $ adb install com.vuzix.sensorAnalysis.apk
 
 - To install the project into Eclipse with ADK plugin, simply follow:
 
