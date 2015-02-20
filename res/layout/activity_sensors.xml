@@ -1,0 +1,179 @@
+<!-- Copyright (c) 2015, Vuzix Corporation
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+*  Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+    
+*  Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+    
+*  Neither the name of Vuzix Corporation nor the names of
+   its contributors may be used to endorse or promote products derived
+   from this software without specific prior written permission.
+    
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <!-- Acceleration Modules -->
+    
+    <TextView
+        android:id="@+id/tv_acceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_acceleration" 
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/tv_acceleration_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_acceleration"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_x" 
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/tv_acceleration_x_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_acceleration_x"
+        android:layout_toRightOf="@id/tv_acceleration_x"
+        android:layout_marginLeft="15dp"
+        android:text="@string/label_x_value" 
+        android:textSize="@dimen/text_normal"/>
+    
+    <TextView
+        android:id="@+id/tv_acceleration_x_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_acceleration_x"
+        android:layout_marginLeft="180dp"
+        android:text="@string/unit_acceleration" 
+        android:textSize="@dimen/text_normal"
+        android:textStyle="italic"/>
+    
+    <TextView
+        android:id="@+id/tv_acceleration_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_acceleration_x"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_y" 
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/tv_acceleration_y_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_acceleration_y"
+        android:layout_toRightOf="@id/tv_acceleration_y"
+        android:layout_marginLeft="15dp"
+        android:text="@string/label_y_value" 
+        android:textSize="@dimen/text_normal"/>
+    
+    <TextView
+        android:id="@+id/tv_acceleration_y_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_acceleration_y"
+        android:layout_marginLeft="180dp"
+        android:text="@string/unit_acceleration" 
+        android:textSize="@dimen/text_normal"
+        android:textStyle="italic"/>
+    
+    <TextView
+        android:id="@+id/tv_acceleration_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_acceleration_y"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_z" 
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold"/>    
+    
+    <TextView
+        android:id="@+id/tv_acceleration_z_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_acceleration_z"
+        android:layout_toRightOf="@id/tv_acceleration_z"
+        android:layout_marginLeft="15dp"
+        android:text="@string/label_z_value" 
+        android:textSize="@dimen/text_normal"/>
+    
+    <TextView
+        android:id="@+id/tv_acceleration_z_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_acceleration_z"
+        android:layout_marginLeft="180dp"
+        android:text="@string/unit_acceleration" 
+        android:textSize="@dimen/text_normal"
+        android:textStyle="italic"/>
+    
+    <!-- CPU Usage Modules -->
+    
+    <TextView
+        android:id="@+id/tv_cpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_cpu" 
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold|italic"/>
+    
+    <TextView
+        android:id="@+id/tv_cpu_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_cpu"
+        android:layout_toRightOf="@id/tv_cpu"
+        android:layout_marginLeft="15dp"
+        android:text="@string/label_cpu_value" 
+        android:textSize="@dimen/text_normal"/>
+        
+   <TextView
+        android:id="@+id/tv_cpu_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_cpu"
+        android:layout_toRightOf="@id/tv_cpu"
+        android:layout_marginLeft="50dp"
+        android:text="@string/unit_cpu" 
+        android:textSize="@dimen/text_normal"
+        android:textStyle="italic"/>
+    
+</RelativeLayout>

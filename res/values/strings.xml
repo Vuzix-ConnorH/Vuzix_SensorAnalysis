@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sensor Analysis</string>
+    <string name="activity_main">Analysis of M100 Sensors</string>
+    <string name="activity_raw">Raw Coordinate View</string>
+    <string name="activity_absolute">Absolute Coordinate View</string>
+    <string name="activity_spherical">Spherical Coordinate View (Physics)</string>
+    <string name="activity_lpf">Low Pass Filtered Spherical Coordinate View</string>
+    <string name="activity_hpf">High Pass Filtered Spherical Coordinate View</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty"></string>
+    
+    <!-- Button Strings -->
+    <string name="btn_do_reset_origin">Reset Virtual Origin</string>
+    <string name="btn_goto_raw">Raw Coordinates</string>
+    <string name="btn_goto_absolute">Absolute Coordinates</string>
+    <string name="btn_goto_spherical">Spherical Coordinates</string>
+    <string name="btn_goto_lpf">Low Pass Filtered Coordinates</string>
+    <string name="btn_goto_hpf">High Pass Filtered Coordinates</string>
+    
+    <!-- Sensors Strings -->
+    <string name="label_acceleration">Acceleration:</string>
+    <string name="label_velocity">Velocity:</string>
+    <string name="label_position">Position:</string>
+    <string name="label_cpu">CPU Usage:</string>
+    
+    <!-- X,Y,Z Strings for Sensors' Values -->
+    <string name="label_x">X:</string>
+    <string name="label_y">Y:</string>
+    <string name="label_z">Z:</string>
+    <string name="label_x_value">        </string>
+    <string name="label_y_value">        </string>
+    <string name="label_z_value">        </string>
+    <string name="label_cpu_value">    </string>
+    
+    <!-- Default Units for Specified Displays -->
+    <string name="unit_acceleration">m/s<sup><small>2</small></sup></string>
+    <string name="unit_velocity">m/s</string>
+    <string name="unit_position">m</string>
+    <string name="unit_cpu">%</string>
+    
+    <!-- Default strings for Sensor Rates -->
+    <string name="rate_normal">Very Slow</string>
+    <string name="rate_ui">Slow</string>
+    <string name="rate_game">Normal</string>
+    <string name="rate_fastest">Fast</string>
+
+</resources>
